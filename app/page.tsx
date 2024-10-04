@@ -1,6 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 
-export default function Home() {
+export default function Home() { 
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
   const winner = calculateWinner(board);
